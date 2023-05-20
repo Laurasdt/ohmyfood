@@ -1,0 +1,48 @@
+.header__logo {
+  font-size: 30px;
+  font-family: shrikhand;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  background-color: #EAEAEA;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location__txt {
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  color: #353535;
+}
+
+.discover {
+  background-color: #F6F6F6;
+}
+.discover__title {
+  font-family: roboto;
+  font-size: 24px;
+  text-align: center;
+}
+.discover__txt {
+  font-family: roboto;
+  font-size: 18px;
+  text-align: center;
+  color: #353535;
+}
+.discover__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  height: 50px;
+  border-radius: 25px;
+  color: white;
+  width: 218px;
+  margin-top: 40px;
+}/*# sourceMappingURL=main.css.map */

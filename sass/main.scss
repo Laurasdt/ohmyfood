@@ -1,0 +1,64 @@
+@import "./header/header";
+@import "./footer/footer";
+@import "./body/colors", "./body/fonts";
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-darkgrey: #353535;
+$color-background: #F6F6F6;
+
+
+@mixin center-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+     &__logo {
+        font-size: 30px;
+        font-family: shrikhand;
+        font-weight: 400;
+        @include center-txt;
+    }
+}
+
+.location {
+    background-color: #EAEAEA;
+    height: 50px;
+    @include center-txt;
+  
+    &__txt {
+        font-size: 16px;
+        font-family: roboto;
+        font-weight: 500;
+        color: $color-darkgrey;
+    }
+}
+
+.discover { 
+    background-color: $color-background;
+
+    &__title {
+        font-family: roboto;
+        font-size: 24px; 
+        text-align: center;
+       
+    }
+    &__txt {
+        font-family: roboto;
+        font-size: 18px;
+        text-align: center;
+        color: $color-darkgrey;
+    }
+    &__btn {
+        @include center-txt;
+        background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        width: 218px;
+        margin-top: 40px;
+    } 
+}
