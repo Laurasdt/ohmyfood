@@ -92,6 +92,25 @@ main {
   padding-left: 20px;
   padding-top: 54px;
 }
+.restaurants .card {
+  height: 251px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: inline-table;
+}
+.restaurants .card__img {
+  height: 231px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurants .card__content {
+  margin-left: 13px;
+  margin-bottom: 12px;
+}
+.restaurants .card__content__title {
+  font-size: 18px;
+}
 
 .footer {
   background-color: #353535;
@@ -101,7 +120,6 @@ main {
 .footer__title {
   font-family: shrikhand;
   font-weight: 400;
-  margin-top: 22px;
   padding-top: 22px;
   padding-left: 25px;
 }/*# sourceMappingURL=main.css.map */
