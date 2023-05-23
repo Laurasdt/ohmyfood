@@ -1,11 +1,14 @@
-@import "./fonts/fonts.css";
+main {
+  font-family: roboto, sans-serif;
+}
+
 body {
   background-color: #F6F6F6;
   margin: 0px;
 }
 
-main {
-  font-family: roboto, sans-serif;
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -31,6 +34,55 @@ main {
   top: 50%;
   left: 23px;
   transform: translateY(-50%);
+}
+
+main {
+  font-family: roboto, sans-serif;
+}
+
+body {
+  background-color: #F6F6F6;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  height: 186px;
+  padding-left: 25px;
+}
+.footer__title {
+  font-family: shrikhand;
+  font-weight: 400;
+  padding-top: 22px;
+}
+.footer__menu {
+  padding-left: 0px;
+  gap: 10px;
+}
+.footer__list {
+  list-style-type: none;
+  padding-bottom: 7px;
+}
+.footer__link {
+  color: white;
+}
+
+main {
+  font-family: roboto, sans-serif;
+}
+
+body {
+  background-color: #F6F6F6;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .location {
@@ -59,6 +111,7 @@ main {
   font-size: 24px;
   padding-left: 42px;
   padding-right: 48px;
+  padding-top: 39px;
 }
 .discover__txt {
   font-family: roboto, sans-serif;
@@ -159,7 +212,6 @@ main {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: inline-table;
   margin-bottom: 15px;
-  text-decoration: none;
   margin: 0 17px 18px 17px;
   position: relative;
 }
@@ -199,27 +251,4 @@ main {
 .restaurants .card__content__subtitle {
   font-weight: 300;
   font-size: 17px;
-}
-
-.footer {
-  background-color: #353535;
-  color: white;
-  height: 186px;
-  padding-left: 25px;
-}
-.footer__title {
-  font-family: shrikhand;
-  font-weight: 400;
-  padding-top: 22px;
-}
-.footer__menu {
-  padding-left: 0px;
-  gap: 10px;
-}
-.footer__list {
-  list-style-type: none;
-}
-.footer__link {
-  text-decoration: none;
-  color: white;
 }/*# sourceMappingURL=main.css.map */

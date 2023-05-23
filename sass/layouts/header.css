@@ -1,0 +1,37 @@
+main {
+  font-family: roboto, sans-serif;
+}
+
+body {
+  background-color: #F6F6F6;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: white;
+  height: 63px;
+  position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  font-size: 30px;
+  font-family: shrikhand;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowleft {
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=header.css.map */

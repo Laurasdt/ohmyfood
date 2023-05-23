@@ -1,0 +1,14 @@
+@import "../utils/variables.scss";
+
+main {
+    font-family: roboto, sans-serif;
+}
+
+body {
+    background-color: $color-background;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}

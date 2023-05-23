@@ -1,0 +1,28 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+@import "../base/normalize.scss";
+
+
+.footer {
+    background-color: $color-darkgrey;
+    color: white;
+    height: 186px;
+    padding-left: 25px;
+    &__title {
+        @include title-shrikhand;
+        padding-top: 22px;
+    }
+    &__menu {
+        padding-left: 0px;
+        gap: 10px;
+    }
+    &__list {
+        list-style-type: none;
+        padding-bottom: 7px;
+    }
+    &__link {
+    color: white ;
+}
+  
+
+}

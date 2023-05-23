@@ -1,0 +1,10 @@
+@mixin center-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title-shrikhand {
+    font-family: shrikhand;
+    font-weight: 400;
+}

@@ -1,0 +1,22 @@
+@import "../utils/mixins.scss";
+@import "../base/normalize.scss";
+
+.header {
+    background-color: white;
+    height: 63px;
+    position: relative;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    @include center-txt;
+     &__logo {
+        font-size: 30px;
+        @include title-shrikhand;
+        @include center-txt;
+    }
+}
+
+.arrowleft {
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    transform: translateY(-50%);
+}
