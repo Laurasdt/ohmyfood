@@ -1,0 +1,160 @@
+@import "../utils/variables.scss", "../utils/mixins.scss";
+
+.location {
+    background-color: #EAEAEA;
+    @include center-txt;
+    gap: 17px;
+    &__icon {
+    color: $color-darkgrey;
+    }
+    &__txt {
+        font-size: 16px;
+        font-weight: 500;
+        color: $color-darkgrey;
+    }
+}
+
+.discover {  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 24px;
+        padding-left: 42px;
+        padding-right: 48px;
+      padding-top: 39px;
+    }
+    &__txt {
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        color: $color-darkgrey;
+    }
+    &__btn {
+        @include center-txt;
+        background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        height: 50px;
+        border-radius: 25px;
+        color: white;
+        width: 218px;
+        margin-top: 40px;
+        text-decoration: none;
+        opacity: 1;
+        transition: opacity 250ms ease-in-out;
+        &:hover {
+            opacity: 0.85;
+            transition: all 250ms ease-in-out;
+        }
+    } 
+}
+
+.fonction {
+    height: 440px;
+    background-color: white;
+    margin-top: 57px;
+    &__title {
+    font-size: 24px;
+    padding: 48px 20px 0 20px;
+    }
+    &__btn {
+        &--nbr {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            @include center-txt
+        }
+        &--position {
+            font-weight: 300;
+            font-size: 18px;
+            font-style: normal;
+            color: white;
+            line-height: 17px;
+        }
+        &--icon {
+            color: $color-middlegrey;
+            font-size: 19px;
+        }
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        &__select {
+        color: black;
+        margin-left: 32.5px;
+        margin-right: 20px;
+        @include center-txt;
+        justify-content: flex-start;
+        padding-left: 33.5px;
+        background-color: #F7F7F7;;
+        border-radius: 25px;
+        height: 72px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        position: relative;
+        }
+    }
+    &__line {
+        display: flex;
+        gap: 27px;
+    }
+}
+
+
+.restaurants {
+    background-color: $color-background;
+    &__title {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 54px;
+}
+.card {
+    height: 251px;
+    width: 340px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: inline-table;
+    margin-bottom: 15px;
+    margin: 0 17px 18px 17px;
+    position: relative;
+    &__new {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        width: 80px;
+        height: 29px;
+        background-color: $color-tertiary;
+        @include center-txt;
+        font-weight: 500;
+        font-size: 14px;
+        color: $color-new;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+    }
+&__img {
+        height: 174px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;  
+}
+&__content {
+    margin-left: 13px;
+    margin-bottom: 12px;
+    color: black;
+    &__title {
+        font-size: 18px;
+        margin: 12px 0 5px 0;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 17px;
+    }
+}
+}
+}
