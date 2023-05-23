@@ -1,3 +1,4 @@
+@import "./fonts/fonts.css";
 body {
   background-color: #F6F6F6;
   margin: 0px;
@@ -10,6 +11,11 @@ main {
 .header {
   background-color: white;
   height: 63px;
+  position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__logo {
   font-size: 30px;
@@ -18,6 +24,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.arrowleft {
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  transform: translateY(-50%);
 }
 
 .location {
@@ -38,6 +51,9 @@ main {
 
 .discover {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .discover__title {
   font-size: 24px;
@@ -60,6 +76,13 @@ main {
   color: white;
   width: 218px;
   margin-top: 40px;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.discover__btn:hover {
+  opacity: 0.85;
+  transition: all 250ms ease-in-out;
 }
 
 .fonction {
@@ -69,23 +92,55 @@ main {
 }
 .fonction__title {
   font-size: 24px;
-  padding-top: 48px;
-  padding-left: 20px;
+  padding: 48px 20px 0 20px;
 }
 .fonction__btn {
   margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
-.fonction__btn__select {
-  margin-bottom: 25px;
-  margin-left: 32px;
+.fonction__btn--nbr {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fonction__btn--position {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  line-height: 17px;
+}
+.fonction__btn--icon {
+  color: #7E7E7E;
+  font-size: 19px;
+}
+.fonction__btn__select {
+  margin-left: 32.5px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 33.5px;
   background-color: #F7F7F7;
   border-radius: 25px;
   height: 72px;
-  width: 322px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.fonction__line {
+  display: flex;
+  gap: 27px;
 }
 
 .restaurants {
@@ -105,9 +160,27 @@ main {
   display: inline-table;
   margin-bottom: 15px;
   text-decoration: none;
+  margin: 0 17px 18px 17px;
+  position: relative;
+}
+.restaurants .card__new {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #008766;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 .restaurants .card__img {
-  height: 231px;
+  height: 174px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -121,6 +194,11 @@ main {
 }
 .restaurants .card__content__title {
   font-size: 18px;
+  margin: 12px 0 5px 0;
+}
+.restaurants .card__content__subtitle {
+  font-weight: 300;
+  font-size: 17px;
 }
 
 .footer {

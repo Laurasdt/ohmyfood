@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffee59856a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./sass/main.css" type="text/css">
     <title>Ohmyfood</title>
 </head>
@@ -30,7 +30,7 @@
          <section class="discover">
             <h3 class="discover__title">Réservez le menu qui vous convient</h3>
             <p class="discover__txt">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a class="discover__btn">
+            <a href="#" class="discover__btn">
                 Explorer nos restaurants
               </a>
          </section>
@@ -38,9 +38,27 @@
          <section class="fonction">
             <h3 class="fonction__title">Fonctionnement</h3>
             <div class="fonction__btn">
-                <a class="fonction__btn__select">Choisissez un restaurant</a>
-                <a class="fonction__btn__select">Composez votre menu</a>
-                <a class="fonction__btn__select">Dégustez au restaurant</a>
+                <a class="fonction__btn__select">
+                  <div class="fonction__line"">
+                    <div><i class="fa-solid fa-mobile-screen-button fonction__btn--icon"></i></div>
+                    <div>Choisissez un restaurant</div>
+                    <div class="fonction__btn--nbr"><span class="fonction__btn--position">1</span></div>
+                  </div>
+                </a>
+                <a class="fonction__btn__select">
+                  <div class="fonction__line"">
+                    <div><i class="fa-solid fa-mobile-screen-button fonction__btn--icon"></i></div>
+                    <div>Composez votre menu</div>
+                    <div class="fonction__btn--nbr"><span class="fonction__btn--position">2</span></div>
+                  </div>
+                </a>
+                <a class="fonction__btn__select">
+                  <div class="fonction__line"">
+                    <div><i class="fa-solid fa-mobile-screen-button fonction__btn--icon"></i></div>
+                    <div>Dégustez au restaurant</div>
+                    <div class="fonction__btn--nbr"><span class="fonction__btn--position">3</span></div>
+                  </div>
+                </a>
          </section>
 
          <section class="restaurants">
@@ -53,6 +71,7 @@
                       <h3 class="card__content__title">La palette du goût</h3>
                       <span class="card__content__subtitle">Ménilmontant</span>
                     </div>
+                    <div class="card__new">Nouveau</div>
             </a>
 
         
@@ -62,6 +81,7 @@
                         <h3 class="card__content__title">La note enchantée</h3>
                         <span class="card__content__subtitle">Charonne</span>
                     </div>
+                    <div class="card__new">Nouveau</div>
                 </a>
 
         
