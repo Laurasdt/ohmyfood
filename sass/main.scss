@@ -42,7 +42,10 @@ main {
 .location {
     background-color: #EAEAEA;
     @include center-txt;
-  
+    gap: 17px;
+    &__icon {
+    color: $color-darkgrey;
+    }
     &__txt {
         font-size: 16px;
         font-weight: 500;
@@ -107,18 +110,24 @@ main {
 }
 .card {
     height: 251px;
+    width: 340px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     display: inline-table;
+    margin-bottom: 15px;
+    text-decoration: none;
 &__img {
         height: 231px;
+        width: 100%;
+        object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;  
 }
 &__content {
     margin-left: 13px;
     margin-bottom: 12px;
+    color: black;
     &__title {
         font-size: 18px;
     }
@@ -130,9 +139,22 @@ main {
     background-color: $color-darkgrey;
     color: white;
     height: 186px;
+    padding-left: 25px;
     &__title {
         @include title-shrikhand;
         padding-top: 22px;
-        padding-left: 25px;
     }
+    &__menu {
+        padding-left: 0px;
+        gap: 10px;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+    text-decoration: none;
+    color: white ;
+}
+  
+
 }

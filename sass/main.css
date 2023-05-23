@@ -25,6 +25,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 17px;
+}
+.location__icon {
+  color: #353535;
 }
 .location__txt {
   font-size: 16px;
@@ -94,19 +98,26 @@ main {
 }
 .restaurants .card {
   height: 251px;
+  width: 340px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: inline-table;
+  margin-bottom: 15px;
+  text-decoration: none;
 }
 .restaurants .card__img {
   height: 231px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 .restaurants .card__content {
   margin-left: 13px;
   margin-bottom: 12px;
+  color: black;
 }
 .restaurants .card__content__title {
   font-size: 18px;
@@ -116,10 +127,21 @@ main {
   background-color: #353535;
   color: white;
   height: 186px;
+  padding-left: 25px;
 }
 .footer__title {
   font-family: shrikhand;
   font-weight: 400;
   padding-top: 22px;
-  padding-left: 25px;
+}
+.footer__menu {
+  padding-left: 0px;
+  gap: 10px;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
