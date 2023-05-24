@@ -34,6 +34,7 @@ a {
   top: 50%;
   left: 23px;
   transform: translateY(-50%);
+  color: black;
 }
 
 main {
@@ -99,9 +100,32 @@ a {
   font-weight: 400;
   margin-left: 16px;
 }
-.menu__division {
+.menu__selection {
   margin-left: 13px;
   margin-top: 42px;
+}
+
+.cardChoice__food {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+}
+.cardChoice__food__title {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 12px;
+  margin: 0;
+}
+.cardChoice__food__descript {
+  font-size: 15px;
+  padding-left: 15px;
+  padding-bottom: 12px;
+}
+.cardChoice__food__descript .price {
+  font-weight: 700;
+  font-size: 15px;
+  padding-right: 16px;
 }
 
 .location {

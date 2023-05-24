@@ -1,0 +1,43 @@
+@import "../utils/mixins.scss";
+
+.menu {
+    &__container {
+     height: 1121px;
+    }
+    &__img {
+        height: 275px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__title {
+        @include title-shrikhand;
+        margin-left: 16px;
+    }
+  &__selection {
+    margin-left: 13px;
+    margin-top: 42px;
+  }
+}
+
+.cardChoice__food {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  &__title {
+      font-weight: 500;
+      font-size: 18px;
+      padding-left: 15px;
+      padding-top: 12px;
+      margin: 0;
+  }
+  &__descript {
+      font-size: 15px;
+      padding-left: 15px;
+      padding-bottom: 12px;
+      .price {
+        font-weight: 700;
+        font-size: 15px;
+        padding-right: 16px;
+      }
+  }
+}
