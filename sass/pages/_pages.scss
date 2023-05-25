@@ -1,9 +1,7 @@
 @import "../utils/mixins.scss";
+@import "../utils/media-queries";
 
 .menu {
-    &__container {
-     height: 1121px;
-    }
     &__img {
         height: 275px;
         width: 100%;
@@ -23,6 +21,8 @@
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  margin-left: 13px;
+  margin-right: 13px;
   &__title {
       font-weight: 500;
       font-size: 18px;
@@ -39,5 +39,28 @@
         font-size: 15px;
         padding-right: 16px;
       }
+  }
+}
+
+.menu {
+  &__title {
+    padding-top: 32px;
+  }
+&__container {
+  background-color: $color-background;
+  margin-top: -63px;
+    position: relative;
+    border-radius: 25px
+}
+}
+
+.order {  
+  display: flex;
+   justify-content: center;
+  &__btn {
+    @include pink-btn;
+    @include center-txt;
+    width: 186px;
+    margin-bottom: 40px;
   }
 }

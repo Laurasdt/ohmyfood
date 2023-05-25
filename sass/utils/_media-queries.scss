@@ -1,0 +1,16 @@
+
+/* Desktop */
+@media (min-width: 1024px){
+}
+
+/* Tablette */
+
+@media (min-width: 768px) {
+
+    .fonction {
+        &__select {
+            justify-content: center;
+        }
+    }
+
+}
