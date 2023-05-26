@@ -1,10 +1,5 @@
 /* Desktop */
 /* Tablette */
-@media (min-width: 768px) {
-  .fonction__select {
-    justify-content: center;
-  }
-}
 main {
   font-family: roboto, sans-serif;
 }
@@ -95,11 +90,6 @@ a {
 
 /* Desktop */
 /* Tablette */
-@media (min-width: 768px) {
-  .fonction__select {
-    justify-content: center;
-  }
-}
 .menu__img {
   height: 275px;
   width: 100%;
@@ -116,26 +106,26 @@ a {
   margin-top: 42px;
 }
 
-.cardChoice__food {
+.cardChoice {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   margin-left: 13px;
   margin-right: 13px;
 }
-.cardChoice__food__title {
+.cardChoice__title {
   font-weight: 500;
   font-size: 18px;
   padding-left: 15px;
   padding-top: 12px;
   margin: 0;
 }
-.cardChoice__food__descript {
+.cardChoice__descript {
   font-size: 15px;
   padding-left: 15px;
   padding-bottom: 12px;
 }
-.cardChoice__food__descript .price {
+.cardChoice__descript .price {
   font-weight: 700;
   font-size: 15px;
   padding-right: 16px;
@@ -164,7 +154,7 @@ a {
   margin-top: 40px;
   text-decoration: none;
   opacity: 1;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms, transform 250ms ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +211,7 @@ a {
   margin-top: 40px;
   text-decoration: none;
   opacity: 1;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms, transform 250ms ease-in-out;
   width: 218px;
 }
 .discover__btn:hover {
