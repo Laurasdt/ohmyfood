@@ -1,6 +1,26 @@
 
 /* Desktop */
 @media (min-width: 1024px){
+    .fonction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            width: 100%;
+            max-width: 1053px;
+        }
+        &__btn {
+            flex-direction: row !important;
+            gap: 37.5px !important;
+            width: 100%;
+            max-width: 1041px;
+            padding-left: 12px;
+            &__select {
+                flex-basis: 30%;
+                margin: 0 !important;
+            }
+        }
+    }
 }
 
 /* Tablette */

@@ -8,8 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffee59856a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../sass/main.css" type="text/css">
+    <link rel="stylesheet" href="../sass/utils/_media-queries.scss" type="text/css">
+    <!-- <link rel="stylesheet" media="(min-width: 767.98px) and (max-width: 1023.98px)" href="../sass/utils/_media-queries.scss">
+    <link rel="stylesheet" media="(min-width: 1023.98px)" href="../sass/utils/_media-queries.scss"> -->
     <title>La note enchantée</title>
 </head>
 
@@ -32,40 +36,51 @@
         <div class="menu__card">
 
           <div class="cardChoice">
-            <h5 class="cardChoice__title">Fricassée d'escargots</h5>
-            <p class="cardChoice__descript">Au piment d'Espelette<span class="price">25€</span></p>
+            <div class="cardChoice__plate">
+              <h5 class="cardChoice__title">Fricassée d'escargots</h5>
+              <p class="cardChoice__descript">Au piment d'Espelette</p>
+            </div>
+            <div class="cardChoice__price">
+              <span class="cardChoice__descript--price">25€</span>
+              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+            </div>
           </div>
-        </div>
-
           <div class="cardChoice">
-            <h5 class="cardChoice__title">Foie gras de canard mi-cuit</h5>
-            <p class="cardChoice__descript">Et ses copeaux de truffe noire<span class="price">35€</span></p>
+            <div class="cardChoice__plate">
+              <h5 class="cardChoice__title">Foie gras de canard mi-cuit</h5>
+              <p class="cardChoice__descript">Et ses copeaux de truffe noire</p>
+            </div>
+            <div class="cardChoice__price">
+              <span class="cardChoice__descript--price">25€</span>
+              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+            </div>
           </div>
-        </div>
-
           <div class="cardChoice">
-            <h5 class="cardChoice__title">Œuf au plat</h5>
-            <p class="cardChoice__descript">Assaisonné à la truffe sur lit de caviar<span class="price">20€</span></p>
+            <div class="cardChoice__plate">
+              <p class="cardChoice__title">&OElig;uf au plat</p>
+              <p class="cardChoice__descript">Assaisonné à la truffe sur lit de caviar</p>
+            </div>
+            <div class="cardChoice__price">
+              <span class="cardChoice__descript--price">25€</span>
+              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+            </div>
           </div>
-        </div>
 
-      </div>
+
 
         <p class="menu__selection">PLATS</p>
         
         <div class="menu__card">
 
           <div class="cardChoice">
-            <h5 class="cardChoice__title">Filet de bœuf aux herbes</h5>
+            <h5 class="cardChoice__title">Filet de b&oelig;uf aux herbes</h5>
             <p class="cardChoice__descript">Et ses copeaux de truffe noire<span class="price">40€</span></p>
           </div>
-        </div>
 
           <div class="cardChoice">
             <h5 class="cardChoice__title">Parmentier de queue de bœuf</h5>
             <p class="cardChoice__descript">À la truffe noire sur sa purée de panais<span class="price">35€</span></p>
           </div>
-        </div>
 
   
           <div class="cardChoice">
@@ -74,7 +89,6 @@
           </div>
         </div>
 
-        </div>
 
         <!--DESSERTS-->
 
@@ -86,19 +100,16 @@
             <h5 class="cardChoice__title">Paris-Brest</h5>
             <p class="cardChoice__descript">Revisité<span class="price">18€</span></p>
           </div>
-        </div>
 
           <div class="cardChoice">
             <h5 class="cardChoice__title">Macaron au chocolat d'exception </h5>
             <p class="cardChoice__descript">Et glace à la vanille de Madagascar<span class="price">22€</span></p>
           </div>
-        </div>
 
           <div class="cardChoice">
             <h5 class="cardChoice__title">Mousse au chocolat</h5>
             <p class="cardChoice__descript">Au piment d'Espelette et à la truffe noire<span class="price">23€</span></p>
           </div>
-        </div>
 
         </div>
 
