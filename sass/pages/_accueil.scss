@@ -1,9 +1,7 @@
-@import "../utils/variables.scss", "../utils/mixins.scss";
-
 .location {
     background-color: #EAEAEA;
     @include center-txt;
-    gap: 17px;
+    gap: 17px; 
     &__icon {
     color: $color-darkgrey;
     }
@@ -12,6 +10,7 @@
         font-weight: 500;
         color: $color-darkgrey;
     }
+   
 }
 
 .discover {  
@@ -54,7 +53,7 @@
             background-color: $color-primary;
             border-radius: 50%;
             transform: translateY(-50%) translateX(-50%);
-            @include center-txt
+            @include center-txt;
         }
         &--position {
             font-weight: 300;
@@ -111,7 +110,7 @@
     transition-property: transform;
     transition-duration: 400ms;
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
     &__new {
         position: absolute;
@@ -149,3 +148,4 @@
 }
 }
 }
+
