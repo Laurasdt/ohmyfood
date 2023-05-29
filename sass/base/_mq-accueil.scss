@@ -1,4 +1,4 @@
-@media (min-width: 1014.98px) {
+@media (min-width: 1023.98px) {
 
    
     .discover {
@@ -30,6 +30,9 @@
             margin: 0;
             width: 322px;
         }
+        &__line {
+            align-items: center;
+        }
     }
 }
 
@@ -41,10 +44,15 @@
     margin-top: 30px;
 }
 
+.FourCards {
+    display: flex;
+    gap: 91px;
+} 
+
 .card {
     margin-left: 0px;
     margin-right: 0px;
+    height: 251px;
 }
 }
 }
-

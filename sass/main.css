@@ -371,7 +371,7 @@ a {
   font-size: 17px;
 }
 
-@media (min-width: 1014.98px) {
+@media (min-width: 1023.98px) {
   .discover {
     margin-bottom: 30px;
   }
@@ -402,6 +402,9 @@ a {
     margin: 0;
     width: 322px;
   }
+  .fonction__btn__line {
+    align-items: center;
+  }
   .restaurants {
     padding-left: 175px;
     padding-right: 175px;
@@ -410,8 +413,13 @@ a {
     padding: 0px;
     margin-top: 30px;
   }
+  .restaurants .FourCards {
+    display: flex;
+    gap: 91px;
+  }
   .restaurants .card {
     margin-left: 0px;
     margin-right: 0px;
+    height: 251px;
   }
 }/*# sourceMappingURL=main.css.map */
