@@ -369,4 +369,49 @@ a {
 .restaurants .card__content__subtitle {
   font-weight: 300;
   font-size: 17px;
+}
+
+@media (min-width: 1014.98px) {
+  .discover {
+    margin-bottom: 30px;
+  }
+  .discover__title {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 40px;
+  }
+  .discover__txt {
+    margin-top: 18px;
+  }
+  .discover__btn {
+    margin-top: 18px;
+  }
+  .fonction {
+    margin-top: 0;
+    padding-left: 180px;
+    padding-right: 207px;
+    height: 228px;
+  }
+  .fonction__title {
+    padding-left: 0;
+  }
+  .fonction__btn {
+    flex-direction: row;
+  }
+  .fonction__btn__select {
+    margin: 0;
+    width: 322px;
+  }
+  .restaurants {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+  .restaurants__title {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .restaurants .card {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */

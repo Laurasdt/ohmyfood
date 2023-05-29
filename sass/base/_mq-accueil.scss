@@ -1,2 +1,50 @@
-@media (min-width: 600px) {
+@media (min-width: 1014.98px) {
+
+   
+    .discover {
+        margin-bottom: 30px;
+        &__title {
+            margin: 0;
+            padding-top: 30px;
+            font-size: 40px;
+        }
+        &__txt {
+            margin-top: 18px;
+        }
+        &__btn {
+            margin-top: 18px;
+        }
+    } 
+    
+.fonction {
+    margin-top: 0;
+    padding-left: 180px;
+    padding-right: 207px;
+    height: 228px;
+    &__title {
+        padding-left: 0;
+    }
+    &__btn {
+        flex-direction: row;
+        &__select {
+            margin: 0;
+            width: 322px;
+        }
+    }
 }
+
+.restaurants {
+    padding-left: 175px;
+    padding-right: 175px;
+&__title {
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.card {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+}
+
