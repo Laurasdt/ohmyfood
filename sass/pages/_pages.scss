@@ -1,4 +1,16 @@
-.menu {
+body {
+  background-color: $color-white;
+}
+
+.menu { 
+&__container {
+  background-color: $color-background;
+  margin-top: -63px;
+  position: relative;
+  border-radius: 25px 25px 0 0;
+  } &__title {
+    padding-top: 32px;
+  }
     &__img {
         height: 275px;
         width: 100%;
@@ -11,6 +23,13 @@
   &__selection {
     margin-left: 13px;
     margin-top: 42px;
+    margin-bottom: 8px;
+    &__line {
+      width: 40px;
+      border: 1.5px solid $color-tertiary;
+      margin-left: 0.75em;
+      margin-bottom: 0.5em;
+    }
   }
   &__card {
     display: flex;
@@ -73,18 +92,6 @@
   }
 }
 
-
-.menu {
-  &__title {
-    padding-top: 32px;
-  }
-&__container {
-  background-color: $color-background;
-  margin-top: -63px;
-    position: relative;
-    border-radius: 25px
-}
-}
 
 .order {  
   display: flex;
