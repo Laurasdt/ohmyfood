@@ -122,6 +122,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cardChoice__price {
   display: flex;
@@ -154,6 +157,9 @@ a {
   font-size: 15px;
   padding-left: 15px;
   margin-top: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cardChoice__descript--price {
   font-weight: 700;
@@ -422,4 +428,18 @@ a {
     margin-right: 0px;
     height: 251px;
   }
+}
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 26px;
+  height: 114px;
+  align-items: baseline;
+}
+.footer__title {
+  padding-top: 57px;
+  margin-top: 0;
+}
+.footer__menu {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

@@ -56,3 +56,19 @@
 }
 }
 }
+
+.footer {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-right: 26px;
+      height: 114px;
+      align-items: baseline;
+      &__title {
+        padding-top: 57px;
+        margin-top: 0;
+      }
+      &__menu {
+        display: flex;
+      }
+      }
+      

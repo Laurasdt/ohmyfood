@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include ellipse;
   }
   &__price {
     display: flex;
@@ -57,14 +58,13 @@
       padding-left: 15px;
       padding-top: 12px;
       margin: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      @include ellipse;
   }
   &__descript {
       font-size: 15px;
       padding-left: 15px;
       margin-top: auto;
+      @include ellipse;
       &--price {
         font-weight: 700;
         font-size: 15px;
