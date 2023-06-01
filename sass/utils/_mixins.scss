@@ -28,6 +28,6 @@
 
 @mixin ellipse {
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
+    overflow: hidden;
 }

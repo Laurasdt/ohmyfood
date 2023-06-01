@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0px;
+}
+
 .header {
   background-color: white;
   height: 63px;
@@ -50,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0px;
+}
+
 .footer {
   background-color: #353535;
   color: white;
@@ -84,6 +92,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0px;
 }
 
 body {
@@ -131,60 +143,57 @@ body {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  margin-left: 13px;
-  margin-right: 13px;
   display: flex;
-  justify-content: space-between;
-  height: 69px;
+  flex-direction: row;
+  height: 70px;
   overflow: hidden;
 }
 .cardChoice__plate {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: auto;
+  flex: 1;
+  padding-left: 20px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cardChoice__plate__title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cardChoice__plate__description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .cardChoice__price {
+  width: 70px;
+  height: 100%;
   display: flex;
-  transform: translateX(59px);
+  align-items: end;
+  justify-content: center;
 }
-.cardChoice__price:hover {
-  transform: translateX(0);
+.cardChoice__price span {
+  font-weight: 700;
+  font-size: 15px;
 }
 .cardChoice__check {
-  width: 59px;
+  width: 70px;
+  height: 100%;
+  margin-right: -70px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.cardChoice__check--color {
   color: #FFFFFF;
+  transition-duration: 0.5s;
 }
-.cardChoice__title {
-  font-weight: 500;
-  font-size: 18px;
-  padding-left: 15px;
-  padding-top: 12px;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.cardChoice__descript {
-  font-size: 15px;
-  padding-left: 15px;
-  margin-top: auto;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.cardChoice__descript--price {
-  font-weight: 700;
-  font-size: 15px;
-  padding: 37.5px 13.5px 0 0;
+.cardChoice:hover > .cardChoice__check {
+  margin: 0px;
+  transition: all 0.5s 0.5s;
 }
 
 .order {
@@ -377,86 +386,20 @@ body {
   margin-left: 13px;
   margin-bottom: 12px;
   color: black;
+  display: flex;
+  justify-content: space-between;
 }
-.restaurants .card__content__title {
+.restaurants .card__content__txt {
   font-size: 18px;
   margin: 12px 0 5px 0;
+  display: flex;
+  flex-direction: column;
 }
-.restaurants .card__content__subtitle {
+.restaurants .card__content__txt__subtitle {
   font-weight: 300;
   font-size: 17px;
 }
-
-@media (min-width: 1023.98px) {
-  .discover {
-    margin-bottom: 30px;
-  }
-  .discover__title {
-    margin: 0;
-    padding-top: 30px;
-    font-size: 40px;
-  }
-  .discover__txt {
-    margin-top: 18px;
-  }
-  .discover__btn {
-    margin-top: 18px;
-  }
-  .fonction {
-    margin-top: 0;
-    padding-left: 180px;
-    padding-right: 207px;
-    height: 228px;
-  }
-  .fonction__title {
-    padding-left: 0;
-  }
-  .fonction__btn {
-    flex-direction: row;
-  }
-  .fonction__btn__select {
-    margin: 0;
-    width: 322px;
-  }
-  .fonction__btn__line {
-    align-items: center;
-  }
-  .restaurants {
-    padding-left: 175px;
-    padding-right: 175px;
-  }
-  .restaurants__title {
-    padding: 0px;
-    margin-top: 30px;
-  }
-  .restaurants .FourCards {
-    display: flex;
-    gap: 91px;
-  }
-  .restaurants .card {
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 251px;
-  }
-}
-.footer {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 26px;
-  height: 114px;
-  align-items: baseline;
-}
-.footer__title {
-  padding-top: 57px;
-  margin-top: 0;
-}
-.footer__menu {
-  display: flex;
-}
-
-@media (min-width: 768.98px) {
-  .menu__container {
-    margin-left: 192px;
-    margin-right: 192px;
-  }
+.restaurants .card__content__icon--heart {
+  fill: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

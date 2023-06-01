@@ -137,15 +137,27 @@
     margin-left: 13px;
     margin-bottom: 12px;
     color: black;
-    &__title {
+    display: flex;
+    justify-content: space-between;
+    &__txt {
         font-size: 18px;
         margin: 12px 0 5px 0;
-    }
-    &__subtitle {
+        display: flex;
+    flex-direction: column;
+        &__subtitle {
         font-weight: 300;
         font-size: 17px;
+        }
     }
 }
 }
-}
+        .card__content__icon--heart {
+  
+            fill: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                overflow: hidden;
+            }
+    }
+
+
+
 
