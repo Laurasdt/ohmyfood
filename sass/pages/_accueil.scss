@@ -36,57 +36,56 @@
 }
 
 .fonction {
-    height: 440px;
-    background-color: white;
-    margin-top: 57px;
-    &__title {
-    font-size: 24px;
-    padding: 48px 20px 0 20px;
-    }
+height: 440px;
+background-color: $color-white;
+margin-top: 57px;
+&__title {
+font-size: 24px;
+padding: 48px 20px 0 20px;
+}
     &__btn {
-        &--nbr {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 24px;
-            height: 24px;
-            background-color: $color-primary;
-            border-radius: 50%;
-            transform: translateY(-50%) translateX(-50%);
-            @include center-txt;
-        }
-        &--position {
-            font-weight: 300;
-            font-size: 18px;
-            font-style: normal;
-            color: white;
-            line-height: 17px;
-        }
-        &--icon {
-            color: $color-middlegrey;
-            font-size: 19px;
-        }
-        margin-top: 26px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
         &__select {
-        color: black;
-        margin-left: 32.5px;
-        margin-right: 20px;
-        @include center-txt;
-        justify-content: flex-start;
-        padding-left: 33.5px;
-        background-color: #F7F7F7;;
-        border-radius: 25px;
-        height: 72px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        position: relative;
+            color: black;
+            margin-left: 32.5px;
+            margin-right: 20px;
+            @include center-txt;
+            justify-content: flex-start;
+            padding-left: 33.5px;
+            background-color: #F7F7F7;;
+            border-radius: 25px;
+            height: 72px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+                 &__line {
+                    display: flex;
+                    gap: 27px;
+                    &--icon {
+                        color: $color-middlegrey;
+                    }
+                    &--nbr {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 24px;
+                        height: 24px;
+                        background-color: $color-primary;
+                        border-radius: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        @include center-txt;
+                    }
+                    &--position {
+                        font-weight: 300;
+                        font-size: 18px;
+                        font-style: normal;
+                        color: white;
+                        line-height: 17px;
+                    }
+                }
         }
-    }
-    &__line {
-        display: flex;
-        gap: 27px;
     }
 }
 
@@ -151,11 +150,6 @@
     }
 }
 }
-        .card__content__icon--heart {
-  
-            fill: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                overflow: hidden;
-            }
     }
 
 

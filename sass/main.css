@@ -290,30 +290,6 @@ body {
   flex-direction: column;
   gap: 25px;
 }
-.fonction__btn--nbr {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.fonction__btn--position {
-  font-weight: 300;
-  font-size: 18px;
-  font-style: normal;
-  color: white;
-  line-height: 17px;
-}
-.fonction__btn--icon {
-  color: #7E7E7E;
-  font-size: 19px;
-}
 .fonction__btn__select {
   color: black;
   margin-left: 32.5px;
@@ -329,9 +305,32 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-.fonction__line {
+.fonction__btn__select__line {
   display: flex;
   gap: 27px;
+}
+.fonction__btn__select__line--icon {
+  color: #7E7E7E;
+}
+.fonction__btn__select__line--nbr {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fonction__btn__select__line--position {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  line-height: 17px;
 }
 
 .restaurants {
@@ -398,8 +397,4 @@ body {
 .restaurants .card__content__txt__subtitle {
   font-weight: 300;
   font-size: 17px;
-}
-.restaurants .card__content__icon--heart {
-  fill: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
