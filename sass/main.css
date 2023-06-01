@@ -351,11 +351,6 @@ body {
   margin-bottom: 15px;
   margin: 0 17px 18px 17px;
   position: relative;
-  transition-property: transform;
-  transition-duration: 400ms;
-}
-.restaurants .card:hover {
-  transform: scale(1.03);
 }
 .restaurants .card__new {
   position: absolute;
