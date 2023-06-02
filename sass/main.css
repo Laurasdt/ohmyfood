@@ -1,4 +1,4 @@
-main {
+main, footer {
   font-family: roboto, sans-serif;
 }
 
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, p {
   color: black;
 }
 
-main {
+main, footer {
   font-family: roboto, sans-serif;
 }
 
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, p {
   color: white;
 }
 
-main {
+main, footer {
   font-family: roboto, sans-serif;
 }
 
@@ -161,6 +161,7 @@ body {
   margin-top: 42px;
   margin-bottom: 8px;
   font-weight: 300;
+  font-size: 16px;
 }
 .category__name--line {
   width: 40px;
