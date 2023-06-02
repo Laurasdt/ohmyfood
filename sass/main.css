@@ -206,10 +206,10 @@ body {
   height: 50px;
   border-radius: 25px;
   color: white;
-  margin-top: 40px;
   text-decoration: none;
   opacity: 1;
   transition: opacity 250ms, transform 250ms ease-in-out;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,12 +222,17 @@ body {
   transform: scale(1.05);
 }
 
+body {
+  background-color: #F6F6F6;
+}
+
 .location {
   background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 17px;
+  height: 50px;
 }
 .location__icon {
   color: #353535;
@@ -243,16 +248,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 40px 0 57px 0;
 }
 .discover__title {
   font-size: 24px;
-  padding-left: 42px;
-  padding-right: 48px;
-  padding-top: 39px;
+  padding: 0px 48px 18px 42px;
 }
 .discover__txt {
   font-size: 18px;
   color: #353535;
+  padding-bottom: 27px;
 }
 .discover__btn {
   display: flex;
@@ -263,7 +268,6 @@ body {
   height: 50px;
   border-radius: 25px;
   color: white;
-  margin-top: 40px;
   text-decoration: none;
   opacity: 1;
   transition: opacity 250ms, transform 250ms ease-in-out;
@@ -333,9 +337,6 @@ body {
   line-height: 17px;
 }
 
-.restaurants {
-  background-color: #F6F6F6;
-}
 .restaurants__title {
   font-size: 24px;
   padding-left: 20px;

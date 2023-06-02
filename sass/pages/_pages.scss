@@ -95,6 +95,7 @@ body {
    justify-content: center;
   &__btn {
     @include pink-btn;
+    margin-top: 40px;
     @include center-txt;
     width: 186px;
     margin-bottom: 40px;
