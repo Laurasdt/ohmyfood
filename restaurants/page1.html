@@ -1,175 +1,215 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ffee59856a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../sass/main.css" type="text/css">
-    <title>La note enchantée</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/ffee59856a.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../sass/main.css" type="text/css" />
+  <title>La note enchantée</title>
 </head>
 
 <body>
   <header class="header">
-     <h1 class="header__logo">ohmyfood</h1> 
-     <a href="../index.html"><i class="fa-solid fa-arrow-left arrowleft"></i></a>
-       </header>
+    <h1 class="header__logo">ohmyfood</h1>
+    <a href="../index.html"><i class="fa-solid fa-arrow-left arrowleft"></i></a>
+  </header>
 
-<main>
-
-       <section class="menu">
-        <img src="../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo plat" class="menu__img">
-        <div class="menu__container">
-        <h2 class="menu__title">La palette du goût</h2>
-
-
+  <main>
+    <section class="menu">
+      <img
+        src="../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="photo plat"
+        class="menu__img"
+      />
+      <div class="menu__container">
+        <div class="menu__title">
+          <h2>La palette du goût</h2>
+          <div class="menu__title--boxicon">
+            <i class="fa-regular fa-heart menu__title--icon menu__title--icon--empty"></i>
+            <i class="fa-solid fa-heart menu__title--icon menu__title--icon--colored"></i>
+          </div>
+        </div>
         <p class="menu__selection">ENTRÉES</p>
-         <div class="menu__selection__line"></div>
+        <div class="menu__selection__line"></div>
 
         <div class="menu__card">
 
-          <div class="cardChoice">
-            <div class="cardChoice__plate">
-              <h5 class="cardChoice__title">Fricassée d'escargots</h5>
-              <p class="cardChoice__descript">Au piment d'Espelette</p>
-            </div>
-            <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">25€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
-            </div>
-          </div>
-          <div class="cardChoice">
-            <div class="cardChoice__plate">
-              <h5 class="cardChoice__title">Foie gras de canard mi-cuit</h5>
-              <p class="cardChoice__descript">Et ses copeaux de truffe noire</p>
-            </div>
-            <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">25€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
-            </div>
-          </div>
-          <div class="cardChoice">
-            <div class="cardChoice__plate">
-              <p class="cardChoice__title">&OElig;uf au plat</p>
-              <p class="cardChoice__descript">Assaisonné à la truffe sur lit de caviar</p>
-            </div>
-            <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">25€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
-            </div>
-          </div>
-          
 
+          <div class="cardChoice">
+            <div class="cardChoice__plate">
+              <h3 class="cardChoice__plate--title">Fricassée d'escargots</h3>
+              <p class="cardChoice__plate--description">Au piment d'Espelette</p>
+            </div>
+            <div class="cardChoice__price">
+              <span>25€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
+            </div>
+          </div>
+
+          <div class="cardChoice">
+            <div class="cardChoice__plate">
+              <h3 class="cardChoice__plate--title">Foie gras de canard mi-cuit</h3>
+              <p class="cardChoice__plate--description">Et ses copeaux de truffe noire</p>
+            </div>
+            <div class="cardChoice__price">
+              <span>25€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
+            </div>
+          </div>
+
+          <div class="cardChoice">
+            <div class="cardChoice__plate">
+              <h3 class="cardChoice__plate--title">&OElig;uf au plat</h3>
+              <p class="cardChoice__plate--description">Assaisonné à la truffe sur lit de caviar</p>
+            </div>
+            <div class="cardChoice__price">
+              <span>25€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
+            </div>
+          </div>
+
+        </div>
 
         <p class="menu__selection">PLATS</p>
         <div class="menu__selection__line"></div>
-        
+
         <div class="menu__card">
-
           <div class="cardChoice">
             <div class="cardChoice__plate">
-              <h5 class="cardChoice__title">Filet de bœuf aux herbes</h5>
-              <p class="cardChoice__descript">Accompagné de sa ribambelle de légumes</p>
+              <h3 class="cardChoice__plate--title">Filet de b&oelig;uf aux herbes</h3>
+              <p class="cardChoice__plate--description">Accompagné de sa ribambelle de légumes</p>
             </div>
             <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">40€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+              <span>40€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
             </div>
           </div>
           <div class="cardChoice">
             <div class="cardChoice__plate">
-              <h5 class="cardChoice__title">Parmentier de queue de bœuf</h5>
-              <p class="cardChoice__descript">À la truffe noire sur sa purée de panais</p>
+              <h3 class="cardChoice__plate--title">Parmentier de queue de bœuf</h3>
+              <p class="cardChoice__plate--description">À la truffe noire sur sa purée de panais</p>
             </div>
             <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">35€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+              <span>35€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
             </div>
           </div>
           <div class="cardChoice">
             <div class="cardChoice__plate">
-              <p class="cardChoice__title">Filet de turbot</p>
-              <p class="cardChoice__descript">Aux agrumes</p>
+              <h3 class="cardChoice__plate--title">Filet de turbot</h3>
+              <p class="cardChoice__plate--description">Aux agrumes</p>
             </div>
             <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">44€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+              <span>44€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
             </div>
           </div>
-
+        </div>
 
         <!--DESSERTS-->
 
         <p class="menu__selection">DESSERTS</p>
         <div class="menu__selection__line"></div>
-        
         <div class="menu__card">
-
           <div class="cardChoice">
             <div class="cardChoice__plate">
-              <h3 class="cardChoice__title">Paris-Brest</h3>
-              <p class="cardChoice__descript">Revisité</p>
+              <h3 class="cardChoice__plate--title">Paris-Brest</h3>
+              <p class="cardChoice__plate--description">Revisité</p>
             </div>
             <div class="cardChoice__price">
               <span>18€</span>
             </div>
-               <div class="cardChoice__check"><i class="fas fa-lg fa-circle-check"></i></div>
-              </div>
-          <div class="cardChoice">
-            <div class="cardChoice__plate">
-              <h5 class="cardChoice__title">Macaron au chocolat d'exception</h5>
-              <p class="cardChoice__descript">Macaron au chocolat d'exception</p>
-            </div>
-            <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">22€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
             </div>
           </div>
           <div class="cardChoice">
             <div class="cardChoice__plate">
-              <p class="cardChoice__title">Mousse au chocolat</p>
-              <p class="cardChoice__descript">Au piment d'Espelette et à la truffe noire</p>
+              <h3 class="cardChoice__plate--title">Macaron au chocolat d'exception</h3>
+              <p class="cardChoice__plate--description">Macaron au chocolat d'exception</p>
             </div>
             <div class="cardChoice__price">
-              <span class="cardChoice__descript--price">23€</span>
-              <div class="cardChoice__check"><i class="fa-solid fa-lg fa-circle-check cardChoice__check--color"></i></div>
+              <span>22€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
             </div>
           </div>
-
+          <div class="cardChoice">
+            <div class="cardChoice__plate">
+              <h3 class="cardChoice__plate--title">Mousse au chocolat</h3>
+              <p class="cardChoice__plate--description">Au piment d'Espelette et à la truffe noire</p>
+            </div>
+            <div class="cardChoice__price">
+              <span>23€</span>
+            </div>
+            <div class="cardChoice__check">
+              <i class="fas fa-lg fa-circle-check"></i>
+            </div>
+          </div>
+        </div>
 
         <!--BOUTON COMMANDER-->
 
         <div class="order">
           <a href="#" class="order__btn">Commander</a>
         </div>
+      </div>
+    </section>
+  </main>
 
-          </div>
-            </section>
+  <!--FOOTER -->
 
-      </main>  
-
-      <!--FOOTER -->
-      
-       <footer class="footer">
-        <h4 class="footer__title">ohmyfood</h4>
-        <ul class="footer__menu">
-            <li class="footer__list">
-              <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
-            </li>
-            <li class="footer__list">
-              <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
-            </li>
-            <li class="footer__list">
-              <a class="footer__link" href="#">Mentions légales</a>
-            </li>
-            <li class="footer__list">
-              <a class="footer__link" href="#">Contact</a>
-            </li>
-          </ul>
-     </footer>
+  <footer class="footer">
+    <h4 class="footer__title">ohmyfood</h4>
+    <ul class="footer__menu">
+      <li class="footer__list">
+        <a class="footer__link" href="#"
+          ><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a
+        >
+      </li>
+      <li class="footer__list">
+        <a class="footer__link" href="#"
+          ><i class="footer__icon fas fa-hands-helping"></i>Devenir
+          partenaire</a
+        >
+      </li>
+      <li class="footer__list">
+        <a class="footer__link" href="#">Mentions légales</a>
+      </li>
+      <li class="footer__list">
+        <a class="footer__link" href="#">Contact</a>
+      </li>
+    </ul>
+  </footer>
 </body>

@@ -1,106 +1,108 @@
 body {
-    background-color: $color-background;
+  background-color: $color-background;
 }
 
 .location {
-    background-color: #EAEAEA;
-    @include center-txt;
-    gap: 17px; 
-    height: 50px;
-    &__icon {
+  background-color: #eaeaea;
+  @include center-txt;
+  gap: 17px;
+  height: 50px;
+  &__icon {
     color: $color-darkgrey;
-    }
-    &__txt {
-        font-size: 16px;
-        font-weight: 500;
-        color: $color-darkgrey;
-    }
-   
+  }
+  &__txt {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-darkgrey;
+  }
 }
 
-.discover {  
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0 57px 0;
-    &__title {
-        font-size: 24px;
-        padding: 0px 48px 18px 42px;
-    }
-    &__txt {
-        font-size: 18px;
-        color: $color-darkgrey;
-        padding-bottom: 27px;
-    }
-    &__btn {
-        @include center-txt;
-        @include pink-btn;
-        width: 218px;
-    } 
+.discover {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 57px 0;
+  &__title {
+    font-size: 24px;
+    padding: 0px 48px 18px 42px;
+  }
+  &__txt {
+    font-size: 18px;
+    color: $color-darkgrey;
+    padding-bottom: 27px;
+  }
+  &__btn {
+    @include center-txt;
+    @include pink-btn;
+    width: 218px;
+  }
 }
 
 .fonction {
-height: 440px;
-background-color: $color-white;
-margin-top: 57px;
-&__title {
-font-size: 24px;
-padding: 48px 20px 0 20px;
-}
-    &__btn {
+  height: 440px;
+  background-color: $color-white;
+  margin-top: 57px;
+  &__title {
+    font-size: 24px;
+    padding: 48px 20px 0 20px;
+  }
+  &__btn {
     margin-top: 26px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-        &__select {
-            color: black;
-            margin-left: 32.5px;
-            margin-right: 20px;
-            @include center-txt;
-            justify-content: flex-start;
-            padding-left: 33.5px;
-            background-color: #F7F7F7;;
-            border-radius: 25px;
-            height: 72px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-            position: relative;
-                 &__line {
-                    display: flex;
-                    gap: 27px;
-                    &--icon {
-                        color: $color-middlegrey;
-                    }
-                    &--nbr {
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        width: 24px;
-                        height: 24px;
-                        background-color: $color-primary;
-                        border-radius: 50%;
-                        transform: translateY(-50%) translateX(-50%);
-                        @include center-txt;
-                    }
-                    &--position {
-                        font-weight: 300;
-                        font-size: 18px;
-                        font-style: normal;
-                        color: white;
-                        line-height: 17px;
-                    }
-                }
+    &__select {
+      color: black;
+      margin-left: 32.5px;
+      margin-right: 20px;
+      @include center-txt;
+      justify-content: flex-start;
+      padding-left: 33.5px;
+      background-color: #f7f7f7;
+      border-radius: 25px;
+      height: 72px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      position: relative;
+      &__line {
+        display: flex;
+        gap: 27px;
+        &--icon {
+          color: $color-middlegrey;
         }
+        &--nbr {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          background-color: $color-primary;
+          border-radius: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          @include center-txt;
+        }
+        &--position {
+          font-weight: 300;
+          font-size: 18px;
+          font-style: normal;
+          color: white;
+          line-height: 17px;
+        }
+      }
     }
+  }
 }
 
 .restaurants {
-    &__title {
+  &__title {
     font-size: 24px;
-    padding-left: 20px;
-    padding-top: 54px;
-}
-.card {
+    padding: 54px 20px 28px 20px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
     height: 251px;
     width: calc(100% - 34px);
     border-radius: 15px;
@@ -109,48 +111,82 @@ padding: 48px 20px 0 20px;
     display: inline-table;
     margin-bottom: 15px;
     margin: 0 17px 18px 17px;
-    position: relative;  
+    position: relative;
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 25px;
+        align-items: center;
+    }
     &__new {
-        position: absolute;
-        top: 13px;
-        right: 13px;
-        width: 80px;
-        height: 29px;
-        background-color: $color-tertiary;
-        @include center-txt;
-        font-weight: 500;
-        font-size: 14px;
-        color: $color-new;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 2px;
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      width: 80px;
+      height: 29px;
+      background-color: $color-tertiary;
+      @include center-txt;
+      font-weight: 500;
+      font-size: 14px;
+      color: $color-new;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
     }
     &__img {
-        height: 174px;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;  
-}
-&__content {
-    margin-left: 13px;
-    margin-bottom: 12px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    &__txt {
+      height: 174px;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    &__content {
+      height: 77px;
+      padding-left: 13px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 5px;
+      &__txt {
         font-size: 18px;
         margin: 12px 0 5px 0;
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
         &__subtitle {
-        font-weight: 300;
-        font-size: 17px;
+          font-weight: 300;
+          font-size: 17px;
         }
+      }
+      &__icon {
+        font-size: 22px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        &--box {
+            width: 22px;
+            height: 22px;
+            position: relative;
+            overflow: hidden;
+            &:hover > .card__content__icon--colored {
+                transform: scale(1);
+                transition: all 300ms;
+            }
+            &:not(:hover) > .card__content__icon--colored {
+                transform: scale(0);
+                transition: all 300ms;
+            }
+        }
+        &--empty {
+            color: black;
+        }
+        &--colored {
+            color: #9356DC;
+            transform: scale(0);
+        }
+      }
+      &__title {
+        margin-top: 12px;
+      }
     }
+  }
 }
-}
-}
-        
-
-
-

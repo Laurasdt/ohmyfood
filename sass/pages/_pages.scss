@@ -8,8 +8,6 @@ body {
   margin-top: -63px;
   position: relative;
   border-radius: 25px 25px 0 0;
-  } &__title {
-    padding-top: 32px;
   }
     &__img {
         height: 275px;
@@ -18,17 +16,48 @@ body {
     }
     &__title {
         @include title-shrikhand;
+        padding-top: 32px;
         margin-left: 16px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &--boxicon{
+          width: 22px;
+          height: 22px;
+          position: relative;
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover > .menu__title--icon--colored {
+            transform: scale(1);
+            transition: all 300ms;
+          }
+          &:not(:hover) > .menu__title--icon--colored {
+            transform: scale(0);
+            transition: all 300ms;
+          }
+        }
+        &--icon  {
+          font-size: 22px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          &--colored {
+            color: #9356DC;
+            transform: scale(0);
+          }
+        }
     }
   &__selection {
     margin-left: 13px;
     margin-top: 42px;
     margin-bottom: 8px;
+    font-weight: 300;
     &__line {
       width: 40px;
       border: 1.5px solid $color-tertiary;
-      margin-left: 0.75em;
-      margin-bottom: 0.5em;
+      margin-left: 13px;
+      margin-bottom: 12px;
     }
   }
   &__card {
@@ -49,23 +78,29 @@ body {
   &__plate {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: auto;
     flex: 1;
     padding-left: 20px;
     @include ellipse;
-    &__title{
-      @include ellipse; 
-    }
-    &__description{
+    &--title{
       @include ellipse;
+      font-weight: 500;
+      font-size: 18px;
+      padding-top: 12px
+    }
+    &--description{
+      @include ellipse;
+      font-weight: 300;
+      font-size: 15px;
+      padding-bottom: 12px;
     }
   }
   &__price {
   width: 70px;
   height: 100%;
   display: flex;
-  align-items: end;
+  padding-top: 37.5px;
   justify-content: center;
   span{
         font-weight: 700;
@@ -85,7 +120,7 @@ body {
   }
   &:hover > .cardChoice__check {
     margin: 0px;
-    transition: all 0.5s 0.5s;
+    transition: all 0.5s;
   }
 }
 

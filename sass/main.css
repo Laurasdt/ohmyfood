@@ -108,9 +108,6 @@ body {
   position: relative;
   border-radius: 25px 25px 0 0;
 }
-.menu__title {
-  padding-top: 32px;
-}
 .menu__img {
   height: 275px;
   width: 100%;
@@ -120,18 +117,49 @@ body {
 .menu__title {
   font-family: shrikhand;
   font-weight: 400;
+  padding-top: 32px;
   margin-left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.menu__title--boxicon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+.menu__title--boxicon:hover {
+  cursor: pointer;
+}
+.menu__title--boxicon:hover > .menu__title--icon--colored {
+  transform: scale(1);
+  transition: all 300ms;
+}
+.menu__title--boxicon:not(:hover) > .menu__title--icon--colored {
+  transform: scale(0);
+  transition: all 300ms;
+}
+.menu__title--icon {
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu__title--icon--colored {
+  color: #9356DC;
+  transform: scale(0);
 }
 .menu__selection {
   margin-left: 13px;
   margin-top: 42px;
   margin-bottom: 8px;
+  font-weight: 300;
 }
 .menu__selection__line {
   width: 40px;
   border: 1.5px solid #99E2D0;
-  margin-left: 0.75em;
-  margin-bottom: 0.5em;
+  margin-left: 13px;
+  margin-bottom: 12px;
 }
 .menu__card {
   display: flex;
@@ -151,7 +179,7 @@ body {
 .cardChoice__plate {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: auto;
   flex: 1;
   padding-left: 20px;
@@ -159,21 +187,27 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.cardChoice__plate__title {
+.cardChoice__plate--title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 12px;
 }
-.cardChoice__plate__description {
+.cardChoice__plate--description {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-weight: 300;
+  font-size: 15px;
+  padding-bottom: 12px;
 }
 .cardChoice__price {
   width: 70px;
   height: 100%;
   display: flex;
-  align-items: end;
+  padding-top: 37.5px;
   justify-content: center;
 }
 .cardChoice__price span {
@@ -193,7 +227,7 @@ body {
 }
 .cardChoice:hover > .cardChoice__check {
   margin: 0px;
-  transition: all 0.5s 0.5s;
+  transition: all 0.5s;
 }
 
 .order {
@@ -227,7 +261,7 @@ body {
 }
 
 .location {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,7 +337,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding-left: 33.5px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 25px;
   height: 72px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -339,8 +373,11 @@ body {
 
 .restaurants__title {
   font-size: 24px;
-  padding-left: 20px;
-  padding-top: 54px;
+  padding: 54px 20px 28px 20px;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
 }
 .restaurants .card {
   height: 251px;
@@ -352,6 +389,12 @@ body {
   margin-bottom: 15px;
   margin: 0 17px 18px 17px;
   position: relative;
+}
+.restaurants .card__line {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  align-items: center;
 }
 .restaurants .card__new {
   position: absolute;
@@ -378,11 +421,13 @@ body {
   border-top-right-radius: 15px;
 }
 .restaurants .card__content {
-  margin-left: 13px;
-  margin-bottom: 12px;
+  height: 77px;
+  padding-left: 13px;
   color: black;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
 }
 .restaurants .card__content__txt {
   font-size: 18px;
@@ -393,4 +438,34 @@ body {
 .restaurants .card__content__txt__subtitle {
   font-weight: 300;
   font-size: 17px;
+}
+.restaurants .card__content__icon {
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+.restaurants .card__content__icon--box {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.restaurants .card__content__icon--box:hover > .card__content__icon--colored {
+  transform: scale(1);
+  transition: all 300ms;
+}
+.restaurants .card__content__icon--box:not(:hover) > .card__content__icon--colored {
+  transform: scale(0);
+  transition: all 300ms;
+}
+.restaurants .card__content__icon--empty {
+  color: black;
+}
+.restaurants .card__content__icon--colored {
+  color: #9356DC;
+  transform: scale(0);
+}
+.restaurants .card__content__title {
+  margin-top: 12px;
 }/*# sourceMappingURL=main.css.map */
