@@ -9,11 +9,25 @@
     background-color: $color-background;
     inset: 0;
     z-index: 1;
-    opacity: 0.9;
-    animation: loader 2s forwards;
-    animation-delay: 3s;
+    opacity: 0.95;
+    animation: loader 0s 2500ms forwards;
+    &__letter {
+        animation: letters 1000ms backwards infinite ease-in-out alternate;
+        @for $i from 1 through 8 {
+            &--#{$i} {
+                animation-delay: 100ms * $i;
+             }
+    }
+}
 }
 
 @keyframes loader {
 to { transform: scale(0);}
+}
+
+@keyframes letters {
+    from {
+        transform: scaleY(0.7);
+}
+to {transform: scaleY(1.0)}
 }
