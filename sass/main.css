@@ -1,3 +1,25 @@
+.loader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: shrikhand;
+  font-weight: 400;
+  font-size: 40px;
+  height: 100vh;
+  background-color: #F6F6F6;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: loader 2s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes loader {
+  to {
+    transform: scale(0);
+  }
+}
 main, footer {
   font-family: roboto, sans-serif;
 }
@@ -233,7 +255,7 @@ body {
   color: #FFFFFF;
   transition-duration: 0.5s;
 }
-.choice__card:hover > .choice__card__check {
+.choice__card:active > .choice__card__check {
   margin: 0px;
   transition: all 0.5s;
 }

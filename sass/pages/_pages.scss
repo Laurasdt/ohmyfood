@@ -126,7 +126,7 @@ body {
     color: #FFFFFF; 
     transition-duration: 0.5s;
   }
-  &:hover > .choice__card__check {
+  &:active > .choice__card__check {
     margin: 0px;
     transition: all 0.5s;
   }
