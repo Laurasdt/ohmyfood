@@ -58,6 +58,13 @@ body {
   flex-direction: row;
   height: 70px;
   overflow: hidden;
+  animation: slide 650ms;
+  transform-origin: left;
+  @for $i from 1 through 9 {
+    &--#{$i} {
+        animation-delay: 300ms * $i;
+     }
+    }
   &__txt {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,24 @@
+@keyframes loader {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes letters {
+  from {
+    transform: scaleY(0.7);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes slide {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: sclaleX(1);
+  }
+}
 .loader {
   position: fixed;
   display: flex;
@@ -41,19 +62,6 @@
   animation-delay: 800ms;
 }
 
-@keyframes loader {
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes letters {
-  from {
-    transform: scaleY(0.7);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
 main, footer {
   font-family: roboto, sans-serif;
 }
@@ -133,6 +141,9 @@ h1, h2, h3, h4, h5, p {
 .footer__list {
   list-style-type: none;
   padding-bottom: 7px;
+}
+.footer__list__mail {
+  color: white;
 }
 .footer__link {
   color: white;
@@ -246,6 +257,35 @@ body {
   flex-direction: row;
   height: 70px;
   overflow: hidden;
+  animation: slide 650ms;
+  transform-origin: left;
+}
+.choice__card--1 {
+  animation-delay: 300ms;
+}
+.choice__card--2 {
+  animation-delay: 600ms;
+}
+.choice__card--3 {
+  animation-delay: 900ms;
+}
+.choice__card--4 {
+  animation-delay: 1200ms;
+}
+.choice__card--5 {
+  animation-delay: 1500ms;
+}
+.choice__card--6 {
+  animation-delay: 1800ms;
+}
+.choice__card--7 {
+  animation-delay: 2100ms;
+}
+.choice__card--8 {
+  animation-delay: 2400ms;
+}
+.choice__card--9 {
+  animation-delay: 2700ms;
 }
 .choice__card__txt {
   display: flex;

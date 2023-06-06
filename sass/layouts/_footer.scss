@@ -20,6 +20,9 @@
     &__list {
         list-style-type: none;
         padding-bottom: 7px;
+        &__mail {
+            color: $color-white;
+        }
     }
     &__link {
         color: white ;
