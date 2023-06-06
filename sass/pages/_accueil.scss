@@ -149,17 +149,13 @@ body {
       gap: 5px;
     &__title {
         margin-top: 12px;
+        &--boxicon {
+          @include heart;
+        }
       }
         &__subtitle {
           font-weight: 300;
           font-size: 17px;
-        }
-      &__icon {
-        font-size: 22px;
-        left: 0;
-        bottom: 0px;
-        width: 22px;
-        height: 22px;
         }
       
     }

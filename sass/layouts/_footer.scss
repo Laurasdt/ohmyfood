@@ -11,6 +11,7 @@
     &__title {
         @include title-shrikhand;
         padding-top: 22px;
+        font-size: 18px;
     }
     &__menu {
         padding-left: 0px;
@@ -21,6 +22,12 @@
         padding-bottom: 7px;
     }
     &__link {
-    color: white ;
-}
+        color: white ;
+        display: flex; 
+            &__icon {
+                width: 13px;
+                margin-right: 11px;
+            }
+        }
+    
 }

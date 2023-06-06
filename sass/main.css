@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5, p {
   font-family: shrikhand;
   font-weight: 400;
   padding-top: 22px;
+  font-size: 18px;
 }
 .footer__menu {
   padding-left: 0px;
@@ -135,6 +136,11 @@ h1, h2, h3, h4, h5, p {
 }
 .footer__link {
   color: white;
+  display: flex;
+}
+.footer__link__icon {
+  width: 13px;
+  margin-right: 11px;
 }
 
 main, footer {
@@ -206,6 +212,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  color: black;
 }
 .container__title--icon--colored {
   color: #9356DC;
@@ -318,6 +325,7 @@ body {
   opacity: 0.85;
   transition: all 250ms ease-in-out;
   transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -375,6 +383,7 @@ body {
   opacity: 0.85;
   transition: all 250ms ease-in-out;
   transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .fonction {
@@ -496,14 +505,34 @@ body {
 .restaurants .card__content__title {
   margin-top: 12px;
 }
+.restaurants .card__content__title--boxicon--boxicon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+.restaurants .card__content__title--boxicon--boxicon:hover {
+  cursor: pointer;
+}
+.restaurants .card__content__title--boxicon--boxicon:hover > .container__title--icon--colored {
+  transform: scale(1);
+  transition: all 300ms;
+}
+.restaurants .card__content__title--boxicon--boxicon:not(:hover) > .container__title--icon--colored {
+  transform: scale(0);
+  transition: all 300ms;
+}
+.restaurants .card__content__title--boxicon--icon {
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+}
+.restaurants .card__content__title--boxicon--icon--colored {
+  color: #9356DC;
+  transform: scale(0);
+}
 .restaurants .card__content__subtitle {
   font-weight: 300;
   font-size: 17px;
-}
-.restaurants .card__content__icon {
-  font-size: 22px;
-  left: 0;
-  bottom: 0px;
-  width: 22px;
-  height: 22px;
 }/*# sourceMappingURL=main.css.map */
