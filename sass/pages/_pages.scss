@@ -16,17 +16,24 @@ body {
 }
 .container {
   background-color: $color-background;
-  margin-top: -63px;
+  margin-top: -65px;
   position: relative;
   border-radius: 25px 25px 0 0;
   &__title {
-     @include title-shrikhand;
-        padding-top: 32px;
-        margin-left: 17px;
-        display: flex;
-        align-items: center;
-        gap: 30px;
-       @include heart;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;    
+    h2{
+      @include title-shrikhand;
+      margin-left: 15px;
+    }
+    &--boxicon{
+      margin-right: 15px;
+      @include heart;
+    }
+       
   }
 }
 

@@ -33,31 +33,48 @@
 }
 
 @mixin heart {
-    &--boxicon{
-        width: 22px;
-        height: 22px;
-        position: relative;
-        &:hover {
-          cursor: pointer;
-        }
-        &:hover > .container__title--icon--colored {
+  width: 22px;
+  height: 22px;
+  position: relative;
+   .fa-heart{
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+      }
+    .far{
+      opacity: 1;
+      z-index: 2;
+      transition: opacity 0.5s ease-in-out;
+      &:hover{
+        opacity: 0;
+      + .fas{
+        opacity: 1;
+        z-index: 2;
+        animation: hurtFull 0.5s linear both;
+      }
+    }
+
+    }
+    .fas{
+      background: linear-gradient(60deg, $color-secondary 0% , $color-primary 100%);
+          background-clip: content-box;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          color: transparent;
+          opacity: 0;
+          z-index: 1;
+          transform-origin: 50% bottom;
           transform: scale(1);
-          transition: all 300ms;
-        }
-        &:not(:hover) > .container__title--icon--colored {
-          transform: scale(0);
-          transition: all 300ms;
-        }
-      }
-      &--icon  {
-        font-size: 22px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: black;
-        &--colored {
-          color: $color-primary;
-          transform: scale(0);
-        }
-      }
-}
+          animation: transform 0.5s cubic-bezier(0.5, 0.21, 1, 0.45);
+    }
+  }
+
+  @keyframes hurtFull {
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(0);
+    }
+  }

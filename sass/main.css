@@ -1,3 +1,11 @@
+@keyframes hurtFull {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @keyframes loader {
   to {
     transform: scale(0);
@@ -62,6 +70,14 @@
   animation-delay: 800ms;
 }
 
+@keyframes hurtFull {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 main, footer {
   font-family: roboto, sans-serif;
 }
@@ -105,6 +121,14 @@ h1, h2, h3, h4, h5, p {
   color: black;
 }
 
+@keyframes hurtFull {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 main, footer {
   font-family: roboto, sans-serif;
 }
@@ -189,45 +213,58 @@ body {
 
 .container {
   background-color: #F6F6F6;
-  margin-top: -63px;
+  margin-top: -65px;
   position: relative;
   border-radius: 25px 25px 0 0;
 }
 .container__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.container__title h2 {
   font-family: shrikhand;
   font-weight: 400;
-  padding-top: 32px;
-  margin-left: 17px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  margin-left: 15px;
 }
 .container__title--boxicon {
+  margin-right: 15px;
   width: 22px;
   height: 22px;
   position: relative;
 }
-.container__title--boxicon:hover {
-  cursor: pointer;
-}
-.container__title--boxicon:hover > .container__title--icon--colored {
-  transform: scale(1);
-  transition: all 300ms;
-}
-.container__title--boxicon:not(:hover) > .container__title--icon--colored {
-  transform: scale(0);
-  transition: all 300ms;
-}
-.container__title--icon {
+.container__title--boxicon .fa-heart {
   font-size: 22px;
   position: absolute;
   top: 0;
   left: 0;
-  color: black;
 }
-.container__title--icon--colored {
-  color: #9356DC;
-  transform: scale(0);
+.container__title--boxicon .far {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 0.5s ease-in-out;
+}
+.container__title--boxicon .far:hover {
+  opacity: 0;
+}
+.container__title--boxicon .far:hover + .fas {
+  opacity: 1;
+  z-index: 2;
+  animation: hurtFull 0.5s linear both;
+}
+.container__title--boxicon .fas {
+  background: linear-gradient(60deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.5s cubic-bezier(0.5, 0.21, 1, 0.45);
 }
 
 .category__name {
@@ -545,32 +582,41 @@ body {
 .restaurants .card__content__title {
   margin-top: 12px;
 }
-.restaurants .card__content__title--boxicon--boxicon {
+.restaurants .card__content__title--boxicon {
   width: 22px;
   height: 22px;
   position: relative;
 }
-.restaurants .card__content__title--boxicon--boxicon:hover {
-  cursor: pointer;
-}
-.restaurants .card__content__title--boxicon--boxicon:hover > .container__title--icon--colored {
-  transform: scale(1);
-  transition: all 300ms;
-}
-.restaurants .card__content__title--boxicon--boxicon:not(:hover) > .container__title--icon--colored {
-  transform: scale(0);
-  transition: all 300ms;
-}
-.restaurants .card__content__title--boxicon--icon {
+.restaurants .card__content__title--boxicon .fa-heart {
   font-size: 22px;
   position: absolute;
   top: 0;
   left: 0;
-  color: black;
 }
-.restaurants .card__content__title--boxicon--icon--colored {
-  color: #9356DC;
-  transform: scale(0);
+.restaurants .card__content__title--boxicon .far {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 0.5s ease-in-out;
+}
+.restaurants .card__content__title--boxicon .far:hover {
+  opacity: 0;
+}
+.restaurants .card__content__title--boxicon .far:hover + .fas {
+  opacity: 1;
+  z-index: 2;
+  animation: hurtFull 0.5s linear both;
+}
+.restaurants .card__content__title--boxicon .fas {
+  background: linear-gradient(60deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  z-index: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  animation: transform 0.5s cubic-bezier(0.5, 0.21, 1, 0.45);
 }
 .restaurants .card__content__subtitle {
   font-weight: 300;
