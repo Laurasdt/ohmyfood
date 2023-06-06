@@ -289,7 +289,7 @@ body {
   color: #FFFFFF;
   transition-duration: 0.5s;
 }
-.choice__card:active > .choice__card__check {
+.choice__card:hover > .choice__card__check {
   margin: 0px;
   transition: all 0.5s;
 }
