@@ -138,7 +138,10 @@ body {
       object-fit: cover;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
-    }
+    }  
+    i {
+        right: 1em;
+       }
     &__content {
       height: 77px;
       padding-left: 13px;
@@ -147,12 +150,10 @@ body {
       flex-direction: column;
       justify-content: flex-start;
       gap: 5px;
-    &__title {
+        &__title {
         margin-top: 12px;
-        &--boxicon {
-          @include heart;
-        }
       }
+      
         &__subtitle {
           font-weight: 300;
           font-size: 17px;

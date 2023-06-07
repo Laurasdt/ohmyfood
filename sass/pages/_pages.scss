@@ -28,10 +28,9 @@ body {
     h2{
       @include title-shrikhand;
       margin-left: 15px;
-    }
-    &--boxicon{
-      margin-right: 15px;
-      @include heart;
+      i {
+        right: 1em;
+      }
     }
        
   }
