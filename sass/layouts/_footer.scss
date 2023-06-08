@@ -19,7 +19,7 @@
         }
     }
     &__menu {
-        padding-left: 0px;
+        padding: 7px 0 0 0;
         gap: 10px;
         @media screen and (min-width: $breakpoint){
             display: flex;
