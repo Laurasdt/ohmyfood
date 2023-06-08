@@ -1,21 +1,31 @@
-@import "../utils/variables.scss";
-@import "../utils/mixins.scss";
-@import "../base/normalize.scss";
-
-
 .footer {
     background-color: $color-darkgrey;
     color: white;
     height: 186px;
     padding-left: 25px;
+    @media screen and (min-width: $breakpoint) {
+        height: 114px;
+        display: flex;
+        flex-direction: row-reverse;
+      padding-right: 3em;
+      align-items: center;
+      }
     &__title {
         @include title-shrikhand;
         padding-top: 22px;
         font-size: 18px;
+        @media screen and (min-width: $breakpoint) {
+            padding-top: 0;
+        }
     }
     &__menu {
         padding-left: 0px;
         gap: 10px;
+        @media screen and (min-width: $breakpoint){
+            display: flex;
+            gap: 20px;
+            width: 661px;
+        }
     }
     &__list {
         list-style-type: none;

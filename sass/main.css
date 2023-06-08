@@ -27,6 +27,16 @@
     transform: sclaleX(1);
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
 .loader {
   position: fixed;
   display: flex;
@@ -91,7 +101,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, ul, li {
   margin: 0px;
 }
 
@@ -121,36 +131,20 @@ h1, h2, h3, h4, h5, p {
   color: black;
 }
 
-@keyframes hurtFull {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-main, footer {
-  font-family: roboto, sans-serif;
-}
-
-body {
-  background-color: #F6F6F6;
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, p {
-  margin: 0px;
-}
-
 .footer {
   background-color: #353535;
   color: white;
   height: 186px;
   padding-left: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 3em;
+    align-items: center;
+  }
 }
 .footer__title {
   font-family: shrikhand;
@@ -158,9 +152,21 @@ h1, h2, h3, h4, h5, p {
   padding-top: 22px;
   font-size: 18px;
 }
+@media screen and (min-width: 1024px) {
+  .footer__title {
+    padding-top: 0;
+  }
+}
 .footer__menu {
   padding-left: 0px;
   gap: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__menu {
+    display: flex;
+    gap: 20px;
+    width: 661px;
+  }
 }
 .footer__list {
   list-style-type: none;
@@ -233,7 +239,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, ul, li {
   margin: 0px;
 }
 
@@ -293,6 +299,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  opacity: 0;
+  animation: fadeIn 4s forwards;
 }
 .choice__card {
   background-color: white;
