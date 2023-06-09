@@ -99,6 +99,11 @@ h1, h2, h3, h4, h5, p, ul, li {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 95px;
+  }
+}
 .header__logo {
   font-size: 30px;
   font-family: shrikhand;
@@ -228,7 +233,9 @@ h1, h2, h3, h4, h5, p, ul, li {
   margin: 0px;
 }
 
-body {
+.bodyPages {
+  display: flex;
+  flex-direction: column;
   background-color: white;
 }
 
@@ -243,12 +250,28 @@ body {
   margin-left: 13px;
   margin-right: 13px;
 }
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 100%;
+    max-width: 634px;
+  }
+}
 
 .container {
   background-color: #F6F6F6;
   margin-top: -65px;
   position: relative;
   border-radius: 25px 25px 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1055px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+  }
 }
 .container__title {
   display: flex;
