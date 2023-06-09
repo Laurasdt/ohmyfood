@@ -25,12 +25,20 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;    
+    padding-top: 30px;   
+    @media screen and (min-width: $breakpoint) {
+    justify-content: center;
+    } 
     h2{
       @include title-shrikhand;
       margin-left: 15px;
       i {
         right: 1em;
+        @media screen and (min-width: $breakpoint) {
+          padding-left: 0.5em;
+          right: auto;
+        }
+
       }
     }
        
