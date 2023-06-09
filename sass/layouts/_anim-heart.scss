@@ -1,7 +1,7 @@
-.heart__icon i {
+.heart i {
     position: absolute;
     cursor: pointer;
-    right: 1rem;
+    right: 16px;
   }
   
   .my-heart-full {
@@ -22,7 +22,7 @@
   .fa-heart {
     position: absolute;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 19px;
     color: black;
   
     &__full {
