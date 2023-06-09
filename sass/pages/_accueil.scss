@@ -26,6 +26,9 @@ body {
   &__title {
     font-size: 24px;
     padding: 0px 48px 18px 42px;
+    @media screen and (min-width: $breakpoint) {
+      font-size: 40px;
+    }
   }
   &__txt {
     font-size: 18px;
@@ -43,6 +46,10 @@ body {
   height: 440px;
   background-color: $color-white;
   margin-top: 57px;
+  @media screen and (min-width: $breakpoint) {
+   height: 228px;
+   padding: 0 207px 0 180px;
+  }
   &__title {
     font-size: 24px;
     padding: 48px 20px 0 20px;
@@ -52,6 +59,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    @media screen and (min-width: $breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     &__select {
       color: black;
       margin-left: 32.5px;
@@ -64,12 +75,19 @@ body {
       height: 72px;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
       position: relative;
+      @media screen and (min-width: $breakpoint) {
+      width: 322px;
+      }
       &__line {
         display: flex;
         gap: 27px;
-        &--icon {
+        align-items: center;
+        & i {
           color: $color-middlegrey;
-        }
+       &:hover {
+        color: $color-primary;
+       }
+      }
         &--nbr {
           position: absolute;
           top: 50%;
@@ -94,6 +112,9 @@ body {
 }
 
 .restaurants {
+  @media screen and (min-width: $breakpoint) {
+    padding: 0 207px 0 180px;
+  }
   &__title {
     font-size: 24px;
     padding: 54px 20px 28px 20px;
@@ -101,6 +122,9 @@ body {
   &__cards {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $breakpoint) {
+      flex-direction: row;
+    }
   }
   .card {
     height: 251px;
@@ -112,6 +136,9 @@ body {
     margin-bottom: 15px;
     margin: 0 17px 18px 17px;
     position: relative;
+    @media screen and (min-width: $breakpoint) {
+  
+    }
     &__line {
         display: flex;
         justify-content: space-between;
