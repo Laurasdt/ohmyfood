@@ -197,7 +197,6 @@ h1, h2, h3, h4, h5, p, ul, li {
 .fa-heart {
   position: absolute;
   cursor: pointer;
-  font-size: 19px;
   color: black;
 }
 .fa-heart__full {
@@ -233,6 +232,8 @@ h1, h2, h3, h4, h5, p, ul, li {
 
 .bodyPages {
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .picture__img {
@@ -660,7 +661,7 @@ main {
   border-top-right-radius: 15px;
 }
 .restaurants .card i {
-  right: 1em;
+  right: 16px;
 }
 .restaurants .card__content {
   height: 77px;
