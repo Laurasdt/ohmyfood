@@ -82,17 +82,17 @@ flex-direction: column;
     opacity: 0;
     animation: fadeIn 4s forwards;
     &__card {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  height: 70px;
-  overflow: hidden;
-  animation: slide 650ms;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    overflow: hidden;
+    animation: slide 650ms;
   
   transform-origin: left;
-  @for $i from 1 through 9 {
+  @for $i from 1 through 10 {
     &--#{$i} {
         animation-delay: 300ms * $i;
      }
@@ -149,8 +149,8 @@ flex-direction: column;
 
 .order {  
   display: flex;
-   justify-content: center;
-  &__btn {
+  justify-content: center;
+    &__btn {
     @include pink-btn;
     @include center-txt;
     width: 186px;

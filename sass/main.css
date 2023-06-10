@@ -356,6 +356,9 @@ h1, h2, h3, h4, h5, p, ul, li {
 .choice__card--9 {
   animation-delay: 2700ms;
 }
+.choice__card--10 {
+  animation-delay: 3000ms;
+}
 .choice__card__txt {
   display: flex;
   flex-direction: column;
