@@ -287,11 +287,19 @@ h1, h2, h3, h4, h5, p, ul, li {
   font-weight: 400;
   margin-left: 15px;
 }
-.container__title h2 i {
+.container__title .heart {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__title .heart i {
   right: 1em;
 }
 @media screen and (min-width: 1024px) {
-  .container__title h2 i {
+  .container__title .heart i {
     padding-left: 0.5em;
     right: auto;
   }
