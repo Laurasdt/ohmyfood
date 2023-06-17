@@ -73,22 +73,6 @@
   animation-delay: 800ms;
 }
 
-main, footer {
-  font-family: roboto, sans-serif;
-}
-
-body {
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, p, ul, li {
-  margin: 0px;
-}
-
 .header {
   background-color: white;
   height: 63px;
