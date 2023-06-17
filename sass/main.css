@@ -199,20 +199,6 @@ h1, h2, h3, h4, h5, p, ul, li {
   cursor: pointer;
   color: black;
 }
-.fa-heart__full {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(#ff79dA, #9356dc);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.fa-heart__full:hover {
-  opacity: 1;
-  background-position: 0% 100%;
-  background-image: linear-gradient(#ff79dA, #9356dc);
-  transition: opacity 1s ease-in-out;
-}
 
 main, footer {
   font-family: roboto, sans-serif;
